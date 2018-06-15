@@ -1,6 +1,6 @@
 {
-  "name": "you-review",
-  "version": "0.0.0",
+  "name": "critiq",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
