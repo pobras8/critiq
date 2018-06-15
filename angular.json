@@ -23,7 +23,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.less"
             ],
             "scripts": []
           },
@@ -123,5 +123,18 @@
       }
     }
   },
-  "defaultProject": "you-review"
+  "defaultProject": "you-review",
+  "cli": {
+    "warnings": {
+      "typescriptMismatch": false
+    },
+    "packageManager": "yarn"
+  },
+  "schematics": {
+    "@schematics/angular": {
+      "component": {
+        "styleext": "less"
+      }
+    }
+  }
 }
