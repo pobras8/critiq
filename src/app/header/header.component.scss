@@ -1,0 +1,13 @@
+#{"/deep/"} .navbar {
+    background-color: transparent;
+}
+
+#{"/deep/"} .top-nav-collapse {
+    background-color: #4285F4;
+}
+
+@media only screen and (max-width: 768px) {
+    #{"/deep/"} .navbar {
+        background-color: #4285F4;
+    }
+}

@@ -13,6 +13,7 @@ const appRoutes: Routes = [
         path: '**',
         component: PageNotFoundComponent
     }
+    // Future paths/paths to be lazy loaded!
 ];
 
 @NgModule({
