@@ -1,9 +1,14 @@
 #{"/deep/"} .navbar {
-    background-color: transparent;
+    background-color: rgba(0,0,0,0.5);
 }
 
 #{"/deep/"} .top-nav-collapse {
     background-color: #4285F4;
+}
+
+.vertical-separator {
+    border-right: 1px solid #cccccc;
+    margin: 0 10px;
 }
 
 @media only screen and (max-width: 768px) {

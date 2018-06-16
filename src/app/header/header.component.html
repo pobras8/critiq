@@ -1,22 +1,31 @@
 <header class="h-100">
     <mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar intro-fixed-nav" [containerInside]="false">
         <logo>
-            <a class="logo navbar-brand text-light">
+            <a routerLink="/" class="logo navbar-brand text-light">
                 <strong>Critiq</strong>
             </a>
         </logo>
         <links>
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active waves-light" mdbWavesEffect>
-                    <a class="nav-link">Home
-                        <span class="sr-only">(current)</span>
+                <li class="nav-item waves-light" routerLinkActive="active" mdbWavesEffect>
+                    <a class="nav-link" routerLink="/games">Games</a>
+                </li>
+                <li class="nav-item waves-light" routerLinkActive="active" mdbWavesEffect>
+                    <a class="nav-link" routerLink="/movies">Movies</a>
+                </li>
+                <li class="dropdown-divider d-lg-none"></li>
+                <li class="vertical-separator d-none d-lg-inline-block"></li>
+                <li class="nav-item waves-light" routerLinkActive="active" mdbWavesEffect>
+                    <a class="nav-link" routerLink="/critics">Browse Critics</a>
+                </li>
+                <li class="dropdown-divider d-lg-none"></li>
+            </ul>
+            <ul class="navbar-nav nav-flex-icons">
+                <li class="nav-item waves-light" mdbWavesEffect>
+                    <a class="nav-link text-uppercase">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        Pobras8
                     </a>
-                </li>
-                <li class="nav-item waves-light" mdbWavesEffect>
-                    <a class="nav-link">Link</a>
-                </li>
-                <li class="nav-item waves-light" mdbWavesEffect>
-                    <a class="nav-link">Profile</a>
                 </li>
             </ul>
         </links>
