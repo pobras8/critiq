@@ -7,6 +7,7 @@ import { LoggerService } from './core/logger/logger.service';
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
+
     title = 'app';
 
     constructor(private logger: LoggerService) {}
