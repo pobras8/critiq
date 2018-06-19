@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes, PreloadAllModules } from '@angular/router';
 
 import { PageNotFoundComponent } from './core/page-not-found/page-not-found.component';
 
@@ -10,14 +10,23 @@ const appRoutes: Routes = [
         pathMatch: 'full'
     },
     {
+        path: 'games',
+        loadChildren: './games/games.module#GamesModule'
+    },
+    {
+        path: 'movies',
+        loadChildren: './movies/movies.module#MoviesModule'
+    },
+    {
         path: '**',
         component: PageNotFoundComponent
     }
-    // Future paths/paths to be lazy loaded!
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(appRoutes)],
+    imports: [RouterModule.forRoot(appRoutes, {
+        preloadingStrategy: PreloadAllModules
+    })],
     exports: [RouterModule]
 })
 export class AppRoutingModule {}

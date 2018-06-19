@@ -1,9 +1,10 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 
 import { throwIfAlreadyLoaded } from './core-module-guard';
+import { SharedModule } from '../shared/shared.module';
 import { HeaderModule } from '../header/header.module';
 import { FooterModule } from '../footer/footer.module';
-import { SharedModule } from '../shared/shared.module';
+import { HomeModule } from '../home/home.module';
 
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
@@ -18,7 +19,8 @@ import { LoggerService } from './logger/logger.service';
     ],
     exports: [
         HeaderModule,
-        FooterModule
+        FooterModule,
+        HomeModule
     ],
     providers: [
         LoggerService
